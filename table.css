@@ -1,0 +1,86 @@
+.table__header {
+    font-size: 2.2vmin;
+}
+
+.table__body {
+    font-size: 2.2vmin;
+}
+
+.table__row {
+    background-color: white;
+    border: 3px solid #F6F6F6;
+    transition: ease-out 0.2s;
+}
+
+.table__row * {
+    box-sizing: border-box;
+    padding-inline: 4%;
+    padding-block: 1.5%;
+    vertical-align: middle;
+}
+
+.table__body .table__row:hover {
+    background-color: #0275D8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.table__row--active {
+    /* border-color: #0275D8; */
+    background-color: #0275D8;
+    color: white;
+    font-weight: bold;
+}
+
+.table__header-item {
+    font-weight: bold;
+}
+
+.header-item__sortable-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+}
+
+.header-item__sortable-wrapper i {
+    font-size: 1.5vmin;
+    -webkit-text-stroke: 0.2vmin;
+    color: #0275D8;
+    align-self: center;
+}
+
+.header-item__name {
+    width: 18%;
+    max-width: 18%;
+}
+
+.header-item__description {
+    text-align: center;
+}
+
+.header-item__category, .header-item__price {
+    width: 12%;
+    max-width: 12%;
+}
+
+.table-item__description {
+    min-width: 50%;
+}
+
+.table-item__person-name {
+    border: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vmin;
+}
+
+.table-item__user-picture {
+    height: 2.2vmin;
+    border: 0%;
+    margin: 0%;
+    padding: 0%;
+}

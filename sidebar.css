@@ -1,0 +1,136 @@
+.sidebar {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 30vmin;
+    height: 100vh;
+    background-color: #0F172A;
+}
+
+.sidebar__header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline: 10%;
+    padding-block: 5%;
+    font-size: 4vmin;
+}
+
+.sidebar__header-icon--inactive {
+    color: #CDCDCD;
+}
+
+.sidebar__header-icon--active {
+    color: #0D9488;
+}
+
+.sidebar__user-wrapper {
+    box-sizing: border-box;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    padding: 10%;
+    gap: 1.4vmin;
+}
+
+.sidebar__user-picture {
+    width: 100%;
+}
+
+.sidebar__user-name {
+    font-size: 1.8vmin;
+    font-weight: 600;
+    color: white;
+}
+
+.sidebar__items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vmin;
+}
+
+.sidebar__subitems {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    padding-inline: 10%;
+    padding-block: 6%;
+    font-size: 2vmin;
+    gap: 2vmin;
+    background-color: #0F172A;
+    color: #CDCDCD;
+    transition: ease-out 0.2s;
+}
+
+.sidebar__item label {
+    transition: ease-out 0.2s;
+}
+
+.sidebar__item:hover {
+    background-color: #4D5466;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar__item label:hover {
+    cursor: pointer;
+}
+
+.sidebar__item-icon {
+    font-size: 2.6vmin;
+    position: absolute;
+}
+
+.sidebar__item-text {
+    padding-inline-start: 4.4vmin;
+}
+
+.sidebar__item-chevron {
+    font-size: 1.6vmin;
+    -webkit-text-stroke: 0.2vmin;
+    align-self: center;
+    margin-left: auto;
+}
+
+.sidebar__subitem {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    padding-inline: 10%;
+    padding-inline-start: 28%;
+    padding-block: 6%;
+    font-size: 2vmin;
+    gap: 2vmin;
+    background-color: #0F172A;
+    color: #CDCDCD;
+    transition: ease-out 0.2s;
+}
+
+.sidebar__subitem label {
+    transition: ease-out 0.2s;
+}
+
+.sidebar__subitem:hover {
+    background-color: #4D5466;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar__subitem label:hover {
+    cursor: pointer;
+}

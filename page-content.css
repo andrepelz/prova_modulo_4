@@ -1,0 +1,67 @@
+.page-content {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #F6F6F6;
+}
+
+.page-content__wrapper {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 2vmax;
+    width: 94%;
+    height: 90%;
+    position: relative;
+    top: 5%;
+    left: 3%;
+    border-radius: 35px;
+    background-color: white;
+    padding-block: 1.5%;
+    padding-block-end: 4.2%;
+    padding-inline: 3%;
+    padding-inline-start: 3.5%;
+    z-index: 0;
+}
+
+.page-content__search-bar {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #C4C4C475;
+    border-radius: 8px;
+}
+
+.page-content__table-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+}
+
+.page-content__table {
+    box-sizing: border-box;
+    width: 100%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+.page-content__page-list {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    align-self: flex-end;
+    background-color: white;
+    border: 3px solid #F6F6F6;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.modal-edit-service {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    /* height: 100%; */
+    background-color: red;
+}

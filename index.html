@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prova Frontend - TELA LISTA SERVICES</title>
+  <script
+      src="https://kit.fontawesome.com/e9e631b38e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="stylesheet" href="page-content.css" />
+    <link rel="stylesheet" href="search-bar.css" />
+    <link rel="stylesheet" href="table.css" />
+    <link rel="stylesheet" href="page-list.css" />
+    <link rel="stylesheet" href="edit-service.css" />
+
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <nav class="sidebar">
+      <header class="sidebar__header">
+        <button>
+          <i class="fa-solid fa-bell sidebar__header-icon--active"></i>
+        </button>
+        
+        <button>
+          <i class="fa-solid fa-gear sidebar__header-icon--inactive"></i>
+        </button>
+      </header>
+
+      <figure class="sidebar__user-wrapper">
+        <img class="sidebar__user-picture" src="images/user-picture.png" alt="">
+        <figcaption class="text sidebar__user-name">Lance Newmann</figcaption>
+      </figure>
+
+      <ul class="sidebar__items">
+        <li class="sidebar__item sidebar__item--inactive" value="inactive">
+          <i class="fa-solid fa-calendar sidebar__item-icon"></i>
+          <label class="text sidebar__item-text">Schedule</label>
+          <i class="fa-solid fa-chevron-right fa-bold sidebar__item-chevron"></i>
+        </li>
+
+        <li class="sidebar__item sidebar__item--inactive" value="inactive">
+          <i class="fa-solid fa-bell-concierge sidebar__item-icon"></i>
+          <label class="text sidebar__item-text">Orders</label>
+          <i class="fa-solid fa-chevron-right fa-bold sidebar__item-chevron"></i>
+        </li>
+
+        <li class="sidebar__item sidebar__item--inactive" value="inactive">
+          <i class="fa-solid fa-user sidebar__item-icon"></i>
+          <label class="text sidebar__item-text">Customers</label>
+          <i class="fa-solid fa-chevron-right fa-bold sidebar__item-chevron"></i>
+        </li>
+
+        <li class="sidebar__item sidebar__item--inactive" value="inactive">
+          <i class="fa-solid fa-briefcase sidebar__item-icon"></i>
+          <label class="text sidebar__item-text">Employees</label>
+          <i class="fa-solid fa-chevron-right fa-bold sidebar__item-chevron"></i>
+        </li>
+
+        <li id="sidebar__item-services" class="sidebar__item sidebar__item--inactive">
+          <i class="fa-solid fa-scissors sidebar__item-icon"></i>
+          <label class="text sidebar__item-text">Services</label>
+          <i class="fa-solid fa-chevron-down fa-bold sidebar__item-chevron"></i>
+        </li>
+
+        <ul id="sidebar__item-services__subitems" class="sidebar__subitems">
+          <li class="sidebar__subitem">
+            <label class="text">List</label>
+          </li>
+
+          <li class="sidebar__subitem">
+            <label class="text">Create</label>
+          </li>
+
+          <li class="sidebar__subitem">
+            <label class="text">Report</label>
+          </li>
+        </ul>
+
+        <li class="sidebar__item sidebar__item--inactive" value="inactive">
+          <i class="fa-solid fa-paperclip sidebar__item-icon"></i>
+          <label class="text sidebar__item-text">Products</label>
+          <i class="fa-solid fa-chevron-right fa-bold sidebar__item-chevron"></i>
+        </li>
+
+        <li class="sidebar__item sidebar__item--inactive" value="inactive">
+          <i class="fa-solid fa-parachute-box sidebar__item-icon"></i>
+          <label class="text sidebar__item-text">Suppliers</label>
+          <i class="fa-solid fa-chevron-right fa-bold sidebar__item-chevron"></i>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="page-content">
+      <div class="page-content__wrapper">
+        <main>
+          <h1 class="text section__title">SERVICES</h1>
+
+          <div class="search-bar page-content__search-bar">
+            <input type="text" class="search-bar__field" placeholder="Search services"/>
+            <button class="search-bar__button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </main>
+
+        <div class="page-content__table-wrapper">
+          <table class="page-content__table">
+            <thead class="table__header">
+              <tr class="table__row">
+                <th class="table__header-item header-item__name">
+                  <div class="header-item__sortable-wrapper">
+                    NAME
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </th>
+                <th class="table__header-item header-item__description">DESCRIPTION</th>
+                <th class="table__header-item header-item__category">CATEGORY</th>
+                <th class="table__header-item header-item__price">
+                  <div class="header-item__sortable-wrapper">
+                    PRICE
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody class="table__body">
+              <tr class="table__row">
+                <td>Van Dyke</td>
+                <td class="table-item__description">Bigode levemente curvado com cavanhaque pontudo</td>
+                <td>Cabelo</td>
+                <td>10.20</td>
+              </tr>
+
+              <tr class="table__row">
+                <td>GARIBALDI</td>
+                <td class="table-item__description">ALTO VOLUME E BIGODE LONGO</td>
+                <td>Cabelo</td>
+                <td>10.20</td>
+              </tr>
+
+              <tr class="table__row">
+                <td>Undercut</td>
+                <td class="table-item__description">Corte lateral e traseiro completo</td>
+                <td>Cabelo</td>
+                <td>10.20</td>
+              </tr>
+
+              <tr class="table__row">
+                <td>High Fade</td>
+                <td class="table-item__description">Corte na zero sem transição até 5 cm acima da nuca</td>
+                <td>Barba</td>
+                <td>10.20</td>
+              </tr>
+
+              <tr class="table__row">
+                <td>Degradê</td>
+                <td class="table-item__description">Corte partindo da zero até o tamanho especificado</td>
+                <td>Cabelo</td>
+                <td>10.20</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <nav class="page-content__page-list">
+          <button id="page-list__first-page" class="page-list__button">
+            <i class="fa-solid fa-angles-left"></i>
+          </button>
+
+          <button id="page-list__previous-page" class="page-list__button">
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+
+          <ul class="page-list__items">
+            <li class="page-list__item">1</li>
+            <li class="page-list__item">2</li>
+            <li class="page-list__item">3</li>
+            <li class="page-list__item">4</li>
+            <li class="page-list__item">5</li>
+          </ul>
+
+          <button id="page-list__next-page" class="page-list__button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+
+          <button id="page-list__last-page" class="page-list__button">
+            <i class="fa-solid fa-angles-right"></i>
+          </button>
+        </nav>
+      </div>
+
+      <div class="modal-edit-service">
+        <h2>EDIT SERVICE</h2>
+
+        <h3>Information</h3>
+
+        <form class="modal-edit-service__inputs">
+          <div class="modal-inputs__column">
+            <input type="text" name="Name" placeholder="NAME" required class="modal__input">
+            <textarea type="text" name="Description" placeholder="DESCRIPTION" class="modal__textarea"></textarea>
+          </div>
+          <div class="modal-inputs__column">
+            <input type="number" name="Price" placeholder="PRICE" required class="modal__input">
+            <select name="Category" placeholder="CATEGORY" required class="modal__input">
+              <option value="cabelo">Cabelo</option>
+              <option value="barba">Barba</option>
+            </select>
+            <input type="time" name="Duration" placeholder="DURATION" required class="modal__input">
+          </div>
+        </form>
+
+        <div class="modal-edit-service__buttons">
+          <input id="modal-edit-service__checkbox-inactive" type="checkbox" name="Inactive">
+          <label for="modal-edit-service__checkbox-inactive">INACTIVE</label>
+
+          <button class="modal__button-confirm">SAVE</button>
+          <button class="modal__button-cancel">CANCEL</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
